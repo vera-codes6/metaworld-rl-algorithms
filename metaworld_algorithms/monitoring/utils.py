@@ -43,8 +43,8 @@ def get_logs(
     return ret
 
 
-def prefix_dict(prefix: str, d: dict[str, Any]) -> dict[str, Any]:
-    return {f"{prefix}/{k}": v for k, v in d.items()}
+# def prefix_dict(prefix: str, d: dict[str, Any]) -> dict[str, Any]:
+#     return {f"{prefix}/{k}": v for k, v in d.items()}
 
 
 def pytree_histogram(pytree: PyTree, bins: int = 64) -> dict[str, Histogram]:
