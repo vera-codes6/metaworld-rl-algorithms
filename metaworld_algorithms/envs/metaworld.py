@@ -171,6 +171,8 @@ class MetaworldMetaLearningConfig(MetaworldConfig, MetaLearningEnvConfig):
             num_classes * self.total_goals_per_task_test
         ) // self.meta_batch_size
 
+
+    
         return metalearning_evaluation(
             agent,  # pyright: ignore[reportArgumentType]
             envs,
