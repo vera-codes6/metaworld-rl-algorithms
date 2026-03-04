@@ -7,6 +7,7 @@ import gymnasium as gym
 from metaworld_algorithms.types import Agent, GymVectorEnv, MetaLearningAgent
 
 
+
 @dataclass(frozen=True)
 class EnvConfig(abc.ABC):
     env_id: str

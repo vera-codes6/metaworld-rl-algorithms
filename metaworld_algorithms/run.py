@@ -74,7 +74,9 @@ class Run:
                 checkpoint_manager.latest_step(),
                 args=get_metadata_only_restore_args(),
             )
+            # return ckpt["metadata"]
             return ckpt["metadata"]
+        
         else:
             return None
 
@@ -170,6 +172,8 @@ class Run:
                 self._timestamp = checkpoint_metadata.get("timestamp", self._timestamp)
 
                 print(f"Loaded checkpoint at step {checkpoint_metadata['step']}")
+        else:
+            pass
 
         # Track number of params
         if self._wandb_enabled:

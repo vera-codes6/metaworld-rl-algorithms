@@ -10,6 +10,7 @@ from jaxtyping import Array, Float, PyTree
 if TYPE_CHECKING:
     from metaworld_algorithms.config.optim import OptimizerConfig
 
+
 # NOTE: GRADNORM ALGORITHM:
 # Initialize $w_i(0)=1 \forall i$
 # Initialize network weights $\mathcal{W}$

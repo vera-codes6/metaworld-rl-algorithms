@@ -120,6 +120,10 @@ class MetaworldConfig(EnvConfig):
         )
 
 
+
+
+
+
 @dataclass(frozen=True)
 class MetaworldMetaLearningConfig(MetaworldConfig, MetaLearningEnvConfig):
     use_one_hot: bool = False
@@ -150,6 +154,9 @@ class MetaworldMetaLearningConfig(MetaworldConfig, MetaLearningEnvConfig):
                 ),
                 dtype=np.float64,
             )
+
+
+
 
     @override
     def evaluate_metalearning(
@@ -247,3 +254,5 @@ class MetaworldMetaLearningConfig(MetaworldConfig, MetaLearningEnvConfig):
             f"Meta-World/{self.env_id}-test",
             **kwargs,  # pyright: ignore[reportArgumentType]
         )
+
+
